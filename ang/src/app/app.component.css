@@ -1,0 +1,95 @@
+/* body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #ffffff;
+  color: #1a1a1b;
+}
+
+.header {
+  background-color: #ffffff; 
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  border-bottom: solid 2px #ff4500;
+}
+
+.logo {
+  height: 50px;
+  margin-right: 10px;
+}
+
+.search-bar {
+  display: flex;
+  margin-left: auto;
+}
+
+.search-bar input {
+  padding: 8px;
+  margin-right: 8px;
+  border: 1px solid #ff8c5a;
+  border-radius: 20px;
+  font-size: 16px;
+  background-color: #ffffff; 
+  color: #1a1a1b;
+  width: 500px;
+}
+
+.search-bar button {
+  background-color: #ff4500; 
+  color: #ffffff;
+  border: none;
+  border-radius: 20px;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 8px 16px;
+}
+
+.search-bar button:hover {
+  background-color: #ff5700; 
+  color: #ffffff;
+}
+
+.actions {
+  margin-left: auto;
+}
+
+.actions button {
+  margin-left: 10px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.actions .login {
+  background-color: #ff4500; 
+}
+
+.actions .register {
+  background-color: #ff4500; 
+}
+.actions .logout {
+  background-color: #ff4500; 
+}
+
+.actions .login:hover {
+  background-color: #ff5700;
+  color: #ffffff;
+}
+
+.actions .register:hover {
+  background-color: #ff5700; 
+  color: #ffffff;
+}
+
+.actions .logout:hover {
+  background-color: #ff5700; 
+  color: #ffffff;
+}
+
+.content {
+  padding: 20px;
+  background-color: #ffffff;
+} */

@@ -1,0 +1,47 @@
+<div class="container mt-4">
+
+  <a class="btn btn-info mb-3" href="#openModal" *ngIf="isAuth">Add Post</a>
+
+  <div id="openModal" class="modalDialog">
+    <div class="card mb-3">
+      <div class="card-body ">
+        <form (submit)="onSubmit()">
+          <div class="mb-3">
+            <label for="title">Title</label>
+            <input type="text" class="form-control" id="title" [(ngModel)]="newPost.title" name="title" required>
+          </div>
+          <div class="mb-3">
+            <label for="content">Content</label>
+            <textarea class="form-control" id="content" [(ngModel)]="newPost.content" name="content"
+              required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary me-4">Add post</button>
+          <a href="#close" title="Close" class="close btn btn-secondary">close</a>
+        </form>
+      </div>
+    </div>
+  </div>
+
+ 
+  <div class="row">
+    <div class="col-md-12">
+      <div class="card mb-3 hov" *ngFor="let post of posts" [routerLink]="['/post', post.id]">
+        <div class="card-body">
+          <h4 class="card-title">{{ post.title }}</h4>
+          <p class="card-text">{{ post.content }}</p>
+        </div>
+        <div class="card-footer text-body-secondary d-flex justify-content-between pb-0">
+          <p>@{{ post.username }} • {{ post.createdAt | date:'medium' }}</p>
+          <div>
+            <button type="button" class="btn btn-info me-4" *ngIf="isAuth && post.username === authService.isUser"
+              (click)="onEditPost(post.id)">Edit</button>
+            <button type="button" class="btn btn-danger" *ngIf="isAuth && post.username === authService.isUser"
+              (click)="onDeletePost(post.id)">Delete</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</div>

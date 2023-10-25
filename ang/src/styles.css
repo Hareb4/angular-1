@@ -1,0 +1,19 @@
+*{font-family: 'Roboto Mono', monospace;}
+body{
+    height: 100vh;
+}
+#container {
+    position: relative;
+ }
+
+#background {
+    color: #FF4500;
+    font-size: 20rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    letter-spacing: .3em;
+    opacity: 0.1;
+    
+ }
